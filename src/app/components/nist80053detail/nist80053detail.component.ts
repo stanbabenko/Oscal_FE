@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
   styleUrl: './nist80053detail.component.css'
 })
 export class Nist80053detailComponent {
-  private apiUrl = 'localhost:8083';
+  private apiUrl = 'http://localhost:8083';
 
   constructor(private http: HttpClient) {}
 
@@ -23,9 +23,7 @@ export class Nist80053detailComponent {
   onClickSubmit() {
     const postData = { /* your data for the POST request */ };
     console.log("POST data works! 5");
-    this.postToApi(postData);
-
-    //this.Nist80053service.postToApi(postData).subscribe();
+    //this.postToApi(postData);
 
     this.postToApi(postData).subscribe(
       response => {
