@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { Nist80053detailComponent } from './components/nist80053detail/nist80053detail.component';
+import { WorkflowVisualizerComponent } from './components/workflow-visualizer/workflow-visualizer.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +13,8 @@ import { Nist80053detailComponent } from './components/nist80053detail/nist80053
   imports: [CommonModule, 
             RouterOutlet,
             Nist80053detailComponent,
-            HttpClientModule
+            WorkflowVisualizerComponent,
+            HttpClientModule,
             
   ],
   templateUrl: './app.component.html',
